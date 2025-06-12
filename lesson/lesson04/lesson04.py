@@ -236,3 +236,5 @@ if (num for num in random_list if num % 2 != 0):
     print("Список містить непарні числа.")
 else:
     print("Усі числа парні.")
+
+print("Список містить непарні числа." if any(num % 2 != 0 for num in random_list) else "Усі числа парні.")
