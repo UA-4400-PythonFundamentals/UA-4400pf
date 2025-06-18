@@ -1,4 +1,5 @@
 def get_bigger_number(num1, num2):
+    """Returns a bigger number"""
     if num1 > num2:
         return num1
     else:
