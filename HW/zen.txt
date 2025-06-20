@@ -1,7 +1,7 @@
 1	Andrii Surovtsev		Гарне краще за потворне.
 2	Anton Biletskiy		Явне краще за неявне.
 3	Anton Parkhomenko		Просте краще за складне.
-4	Antonina Pokotylenko		Складне краще за заплутане.
+                    		Складне краще за заплутане.
 5	Dmytro Shvets		Плоске краще за вкладене.
 6	Gennady Molodetsky		Розріджене краще за щільне.
 7	Hryhorii Dovhaliuk		Легкість читання має значення.
