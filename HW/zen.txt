@@ -1,4 +1,4 @@
-1	Andrii Surovtsev		Гарне краще за потворне.
+                		Гарне краще за потворне.
 2	Anton Biletskiy		Явне краще за неявне.
 3	Anton Parkhomenko		Просте краще за складне.
 4	Antonina Pokotylenko		Складне краще за заплутане.
