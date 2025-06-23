@@ -1,0 +1,1 @@
+print(f"run {__name__}")
