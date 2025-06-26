@@ -1,0 +1,8 @@
+RGB_RED = (255, 0, 0)
+RGB_GREEN = (0, 255, 0)
+RGB_BLUE = (0, 0, 255)
+RGB_BLACK = (0, 0, 0)
+RGB_WHITE = (255, 255, 255)
+RGB_TEAL = (0, 128, 128)
+RGB_MAROON = (128, 0, 0)
+RGB_NAVY = (0, 0, 128)
