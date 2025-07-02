@@ -1,3 +1,6 @@
+#You need to change the code in the Rect_pygame.py program 
+#so that the rectangle does not extend beyond the program window.
+
 import pygame
 
 FPS = 60
@@ -42,6 +45,22 @@ while run:
         COORD_Y = COORD_Y-DELTA_STEP
     if keys[pygame.K_DOWN]:
         COORD_Y = COORD_Y+DELTA_STEP
+
+    #solution
+
+    #left border
+    if COORD_X < 0:
+        COORD_X = 0
+    #right border
+    if COORD_X > WIDTH_DISPLAY - WIDTH_RECTANGLE:
+        COORD_X = WIDTH_DISPLAY - WIDTH_RECTANGLE
+
+    #top border
+    if COORD_Y < 0:
+        COORD_Y = 0
+    #bottom border
+    if COORD_Y > HEIGHT_DISPLAY - HEIGHT_RECTANGLE:
+        COORD_Y = HEIGHT_DISPLAY - HEIGHT_RECTANGLE
 
 
     gameDisplay.fill(BLACK_COLOR) 
