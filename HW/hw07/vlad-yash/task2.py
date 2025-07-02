@@ -43,18 +43,19 @@ def main():
     if shape == "1":
         length = get_number("Enter the length:  ")
         width = get_number("Enter the width:  ")
-        print(f"Area of the rectangle is {round(rectangle_area(length, width))}")
+        print(f"Area of the rectangle is {round(rectangle_area(length, width), 2)}")
 
-    if shape == "2":
+    elif shape == "2":
         base = get_number("Enter the base:  ")
         height = get_number("Enter the height:  ")
-        print(f"Area of the triangle is {round(triangle_area(base, height),2)}")
+        print(f"Area of the triangle is {round(triangle_area(base, height), 2)}")
 
-    if shape == "3":
+    elif shape == "3":
         radius = get_number("Enter the radius:  ")
-        print(f"Area of the circle is {round(circle_area(radius),2)}")
+        print(f"Area of the circle is {round(circle_area(radius), 2)}")
         
-
+    else:
+        print("Incorrect choice!")
 
 if __name__ == "__main__":
     main()
