@@ -1,3 +1,4 @@
+# task3
 from geometry import rectangle_area, triangle_area, circle_area
 def area_of():
     area = int(input("Введить:\n1 - якщо це площа прямокутника\n2 - якщо це площа трикутника\n3 - якщо це площа кола\n"))
