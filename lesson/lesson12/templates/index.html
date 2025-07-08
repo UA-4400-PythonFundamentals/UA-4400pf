@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a clean look */
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        /* Basic table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb; /* Light gray border */
+        }
+        th {
+            background-color: #e0e7ff; /* Light blue header */
+            color: #374151; /* Darker text */
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: #eff6ff; /* Lighter blue on hover */
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8 lg:p-10">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 sm:p-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Registered Users</h1>
+
+        {% if users %}
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 uppercase text-sm font-semibold text-gray-600 bg-gray-100 rounded-tl-lg">ID</th>
+                            <th class="py-3 px-4 uppercase text-sm font-semibold text-gray-600 bg-gray-100 rounded-tr-lg">Username</th>
+                            <th class="py-3 px-4 uppercase text-sm font-semibold text-gray-600 bg-gray-100 rounded-tr-lg">View/Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for user in users %}
+                        <tr>
+                            <td class="py-3 px-4 text-gray-700">{{ user.id }}</td>
+                            <td class="py-3 px-4 text-gray-700">{{ user.username }}</td>
+                            <td class="py-3 px-4 text-gray-700">
+                                <a href="/{{ user.id }}" class="text-indigo-600 hover:text-indigo-800 font-semibold">View/Edit</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <p class="text-center text-gray-600 text-lg py-8">No users found.</p>
+            <p class="text-center text-gray-500 text-sm">
+                You can generate dummy users by calling `User.generate_dummy_users(10)` in your Flask application context.
+            </p>
+        {% endif %}
+
+        <div class="mt-8 text-center">
+            <a href="/" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">
+                Go to Home
+            </a>
+        </div>
+    </div>
+</body>
+</html>
