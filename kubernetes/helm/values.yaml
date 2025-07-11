@@ -1,0 +1,19 @@
+image:
+  repository: "IP_OF_LOCAL_DOCKER_REGISTRY/flask-app" # or upload flask-app image to Docker Hub
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 5000
+  targetPort: 5000
+
+nodeSelector:
+  node-role: "worker"
+
+ingress:
+  enabled: true
+  host: python.proxy-test.xyz
+  tls:
+    enabled: true
+    secretName: my-tls-secret

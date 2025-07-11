@@ -1,0 +1,9 @@
+{{/* Generate a fullname for resources */}}
+{{- define "flask.fullname" -}}
+{{- printf "%s-%s" .Release.Name .Chart.Name | lower | trunc 63 | trimSuffix "-" -}}
+{{- end }}
+
+{{/* Generate a name for resources */}}
+{{- define "flask.name" -}}
+{{- .Chart.Name -}}
+{{- end }}
