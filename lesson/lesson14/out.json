@@ -1,0 +1,10 @@
+{
+  "firstName": "Ivan",
+  "lastName": "King",
+  "hobbies": ["reading", "traveling", "singing"],
+  "age": 99,
+  "children": [
+    { "firstName": "Vira", "age": 33 },
+    { "firstName": "Maksym", "age": 5 }
+  ]
+}
