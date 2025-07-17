@@ -1,0 +1,9 @@
+def largest_number(a, b):
+    if a > b:
+        return f"The largest number is {a}"
+    elif b > a:
+        return f"The largest number is {b}"
+    else:
+        return f"There are two similar numbers!"
+
+print(largest_number(5, 5))
