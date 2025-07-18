@@ -128,10 +128,11 @@
 #     else:
 #         # raise 10 #TypeError: exceptions must derive from BaseException
 #         raise ZeroDivisionError(f"Invalid input, please enter a number. value:{value} is type{type(value)}")
+    
 # read()
 
-# class CustomError(Exception):
-#     pass
+class CustomError(Exception):
+    pass
 
 
 
