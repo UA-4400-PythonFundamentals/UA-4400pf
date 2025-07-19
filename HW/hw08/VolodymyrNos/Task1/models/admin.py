@@ -1,3 +1,3 @@
-__all__ = ['create_admin']
+__all__ = ["create_admin"]
 def create_admin():
     pass
